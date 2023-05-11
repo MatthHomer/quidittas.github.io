@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(228, 66%, 53%);
+  --first-color:#f9b118;
   --first-color-alt: hsl(228, 66%, 47%);
   --first-color-light: hsl(228, 62%, 59%);
   --first-color-lighten: hsl(228, 100%, 97%);
@@ -15,14 +15,13 @@
   --title-color: hsl(228, 57%, 28%);
   --text-color: hsl(228, 15%, 50%);
   --text-color-light: hsl(228, 12%, 75%);
-  --border-color: hsl(2
-  28, 99%, 98%);
+  --border-color: hsl(2, 28, 99%, 98%);
   --body-color: #fff;
   --container-color: #fff;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Montserrat', sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
