@@ -987,7 +987,7 @@ body.dark-theme {
 
   .value__container,
   .contact__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
   }
 
@@ -1148,7 +1148,7 @@ body.dark-theme {
   }
 
   .contact__card {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(4, 200px);
   }
   .contact__card-box {
     padding: 28px 1.5rem 1.5rem;
