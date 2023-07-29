@@ -131,4 +131,38 @@ sr.reveal(`.home__value`, {delay: 700})
 sr.reveal(`.home__images`, {delay: 800, origin: 'bottom'})
 sr.reveal(`.logos__img`, {interval: 100})
 sr.reveal(`.value__images, .contact__content`, {origin: 'left'})
-sr.reveal(`.value__content, .contact__images`, {origin: 'right'})
+sr.reveal(`.value__content, .contact__images`, {origin: 'right'});
+
+
+const https = require('https');
+
+const whatsappNumber = '5551999419779';
+
+const sendMessage = async (message) => {
+  const options = {
+    host: 'api.whatsapp.com',
+    path: `/send?phone=${whatsappNumber}&text=${message}`,
+    method: 'POST',
+  };
+
+  const response = await https.request(options);
+
+  if (response.statusCode === 200) {
+    console.log('Mensagem enviada com sucesso.');
+  } else {
+    console.log('Erro ao enviar mensagem.');
+    console.log(response.statusMessage);
+  }
+};
+
+const getFormValue = () => {
+  const input = document.querySelector('.home__search-input');
+  return input.value;
+};
+
+const sendToWhatsapp = () => {
+  const value = getFormValue();
+  sendMessage(value);
+};
+
+document.querySelector('.home__search-input').addEventListener('keyup', sendToWhatsapp);
